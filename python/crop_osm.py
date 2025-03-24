@@ -7,10 +7,10 @@ import read_osm
 # For Geofabrik files: due to an issue with osmread package, you may need to comment out the line with _changeset in osmread/parser/xml.py 
 
 bounds = {
-    "minlat": 49.9829, "minlon": 8.48095,
-    "maxlat": 50.2037, "maxlon": 8.8260,
+    "minlat": 48.02981, "minlon": 11.39113,
+    "maxlat": 48.25083, "maxlon": 11.72135,
 }
-INFILE = "hessen-220101.osm.pbf"
+INFILE = "oberbayern-latest.osm.pbf"
 
 read_osm.crop_bounds(INFILE, bounds)
 # will create a file INFILE + '_crop.osm'
